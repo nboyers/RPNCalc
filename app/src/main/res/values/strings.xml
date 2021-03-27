@@ -1,3 +1,7 @@
-<resources>
-    <string name="app_name">RPNCalc</string>
-</resources>
+
+    <resources>
+        <string name="app_name">RPNCalc</string>
+        <string name="test_Helper">Test Helper</string>
+        <string name="test_controller">Test Controller</string>
+        <string name="back_space"><![CDATA[<]]></string>
+    </resources>
