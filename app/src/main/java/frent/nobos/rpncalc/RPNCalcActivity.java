@@ -51,11 +51,4 @@ public class RPNCalcActivity extends AppCompatActivity {
 
         mResult.setText(mHelper.addKey(numButton));
     }
-
-
-    // sample  ca-app-pub-3940256099942544~3347511713
-
-   /*
-   actual android:value="ca-app-pub-7542723422099323/2733512304"
-    */
 }
