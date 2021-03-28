@@ -22,9 +22,8 @@ import com.google.android.gms.ads.AdView;
  */
 public class RPNCalcActivity extends AppCompatActivity {
 
-    private GUIHelper mHelper = new GUIHelper();  // Helper to run calculations
-    private EditText mResult;                                   // Edits the screen for user
-    private AdView adView;
+    private final GUIHelper mHelper = new GUIHelper();  // Helper to run calculations
+    private EditText mResult;                     // Edits the screen for user
 
 
     /**
@@ -34,10 +33,10 @@ public class RPNCalcActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_rpn_calc);
+        //setContentView(R.layout.activity_rpn_calc);
         mResult = findViewById(R.id.screen);
         mResult.setText("0.0");
-        adView = findViewById(R.id.adMobBanner);
+        AdView adView = findViewById(R.id.adMobBanner);
         AdsManager adsManager = new AdsManager(this);
         adsManager.createAds(adView);
     }
@@ -48,7 +47,6 @@ public class RPNCalcActivity extends AppCompatActivity {
      */
     public void buttonClick(View view) {
         String numButton = ((Button)view).getText().toString();
-
         mResult.setText(mHelper.addKey(numButton));
     }
 }
