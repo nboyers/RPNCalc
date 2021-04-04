@@ -15,7 +15,7 @@ import com.google.android.gms.ads.AdView;
 /**
  * Main Class of the App
  * @author Noah Boyers
- * last edited: 16-03-2021
+ * last edited: 2021-04-03
  */
 public class RPNCalcActivity extends AppCompatActivity {
     private  GUIHelper mHelper;   // Helper to run calculation
@@ -30,11 +30,12 @@ public class RPNCalcActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Initalizes the Helper, Result and Ads
+        // Initializes the Helper, Result and Ads
         mResult = new EditText(this);
         mHelper = new GUIHelper();
         adsManager = new AdsManager(this);
 
+        // Sets up the screen to say 0.0
         setContentView(R.layout.activity_main);
         mResult = findViewById(R.id.screen);
         mResult.setText("0.0");
