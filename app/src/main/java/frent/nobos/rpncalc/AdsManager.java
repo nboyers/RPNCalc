@@ -13,7 +13,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class AdsManager {
 
-    private Context ctx;
+    private final Context ctx;
 
     public AdsManager(Context context){
         this.ctx = context;

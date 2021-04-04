@@ -2,10 +2,7 @@ package frent.nobos.rpncalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,10 +18,9 @@ import com.google.android.gms.ads.AdView;
  * last edited: 16-03-2021
  */
 public class RPNCalcActivity extends AppCompatActivity {
-
-    private final GUIHelper mHelper = new GUIHelper();  // Helper to run calculations
-    private EditText mResult;                     // Edits the screen for user
-
+    private  GUIHelper mHelper;   // Helper to run calculation
+    public AdsManager adsManager; // Runs Calculations
+    private EditText mResult;     // Shows the number displays
 
     /**
      * on the app's creations runs this method
@@ -33,11 +29,18 @@ public class RPNCalcActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_rpn_calc);
+
+        // Initalizes the Helper, Result and Ads
+        mResult = new EditText(this);
+        mHelper = new GUIHelper();
+        adsManager = new AdsManager(this);
+
+        setContentView(R.layout.activity_main);
         mResult = findViewById(R.id.screen);
         mResult.setText("0.0");
+
+        //Creation of ads on the program
         AdView adView = findViewById(R.id.adMobBanner);
-        AdsManager adsManager = new AdsManager(this);
         adsManager.createAds(adView);
     }
 
@@ -46,7 +49,8 @@ public class RPNCalcActivity extends AppCompatActivity {
      * @param view - Input from the buttons
      */
     public void buttonClick(View view) {
-        String numButton = ((Button)view).getText().toString();
-        mResult.setText(mHelper.addKey(numButton));
+            String numButton = ((Button) view).getText().toString();
+            mResult.setText(mHelper.addKey(numButton));
     }
 }
+
