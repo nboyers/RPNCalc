@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RPNCalc" >
-<activity android:name=".RPNCalcActivity">
+
+<activity
+    android:name=".RPNCalcActivity"
+        android:windowSoftInputMode="stateHidden" >
 
     <intent-filter>
         <action android:name="android.intent.action.MAIN" />
