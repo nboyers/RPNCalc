@@ -19,6 +19,7 @@
         android:layout_marginBottom="5dp"
         ads:adUnitId="ca-app-pub-7542723422099323/2733512304"/>
 
+
     <EditText
         android:id="@+id/screen"
         android:layout_width="match_parent"
@@ -27,14 +28,17 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="30dp"
         android:layout_weight=".5"
-        android:background="#9DFFD4"
+        android:background="#DDDCC8"
         android:gravity="end"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="none"
         android:padding="5dp"
         android:textColor="#0000ff"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:longClickable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -104,7 +108,7 @@
             android:layout_height="fill_parent"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@color/purple_500"
+            android:background="#3B1145"
             android:onClick="buttonClick"
             android:text="@string/_7"
             android:textColor="#000000"

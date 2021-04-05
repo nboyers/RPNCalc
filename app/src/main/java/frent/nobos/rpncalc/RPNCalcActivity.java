@@ -35,6 +35,7 @@ public class RPNCalcActivity extends AppCompatActivity {
         mHelper = new GUIHelper();
         adsManager = new AdsManager(this);
 
+        mResult.setKeyListener(null);
         // Sets up the screen to say 0.0
         setContentView(R.layout.activity_main);
         mResult = findViewById(R.id.screen);
