@@ -39,6 +39,8 @@ public class RPNCalcActivity extends AppCompatActivity {
         // Sets up the screen to say 0.0
         setContentView(R.layout.activity_main);
         mResult = findViewById(R.id.screen);
+        mResult.setEnabled(false);
+        mResult.setKeyListener(null);
         mResult.setText("0.0");
 
         //Creation of ads on the program

@@ -29,16 +29,16 @@
         android:layout_marginBottom="30dp"
         android:layout_weight=".5"
         android:background="#DDDCC8"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
         android:gravity="end"
         android:importantForAutofill="no"
         android:inputType="none"
+        android:longClickable="false"
         android:padding="5dp"
         android:textColor="#0000ff"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:longClickable="false"
-        android:cursorVisible="false"
-        android:focusableInTouchMode="false" />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="fill_parent"
