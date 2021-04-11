@@ -15,7 +15,7 @@ import com.google.android.gms.ads.AdView;
 /**
  * Main Class of the App
  * @author Noah Boyers
- * last edited: 2021-04-03
+ * last edited: 2021-04-10
  */
 public class RPNCalcActivity extends AppCompatActivity {
     private  GUIHelper mHelper;   // Helper to run calculation
