@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724922683867",
+    "project_id": "valid-alpha-295822",
+    "storage_bucket": "valid-alpha-295822.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724922683867:android:5264623b96d733e1bbd7fe",
+        "android_client_info": {
+          "package_name": "frent.nobos.rpncalc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724922683867-st0nveiqvblosn0r10mbhsvenlqmpkng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdTjM-s3Qyl3TNAdegOfwxqE2FVPlKkok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724922683867-st0nveiqvblosn0r10mbhsvenlqmpkng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
