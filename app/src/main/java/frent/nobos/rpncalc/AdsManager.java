@@ -16,9 +16,8 @@ public class AdsManager {
 
     public AdsManager(Context context){
         this.ctx = context;
-        MobileAds.initialize(ctx, initializationStatus -> {
+        MobileAds.initialize(ctx, initializationStatus -> {});
 
-        });
     }
     public void createAds(AdView adView) {
         AdRequest adRequest = new AdRequest.Builder().build();

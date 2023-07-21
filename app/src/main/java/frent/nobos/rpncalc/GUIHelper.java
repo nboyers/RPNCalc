@@ -4,10 +4,10 @@ package frent.nobos.rpncalc;
 
 
 public class GUIHelper {
-    private StringBuilder display;             // the string that is returned for the user to see
+    private final StringBuilder display;             // the string that is returned for the user to see
     private boolean       isEditable;          // current num can be changed (<, ., more digits)
     private boolean       displayIsInStack;    // displayed number is saved in the stack
-    private RPNCalcMath calc;                // MVC controller object
+    private final RPNCalcMath calc;                // MVC controller object
 
     /**
      * no-arg constructor. initialize display attributes
