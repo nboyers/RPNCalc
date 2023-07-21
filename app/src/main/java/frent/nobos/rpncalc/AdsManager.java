@@ -2,8 +2,6 @@ package frent.nobos.rpncalc;
 
 import android.content.Context;
 import android.widget.Toast;
-
-
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -16,8 +14,9 @@ public class AdsManager {
 
     public AdsManager(Context context){
         this.ctx = context;
-        MobileAds.initialize(ctx, initializationStatus -> {});
+        MobileAds.initialize(ctx, initializationStatus -> {
 
+        });
     }
     public void createAds(AdView adView) {
         AdRequest adRequest = new AdRequest.Builder().build();

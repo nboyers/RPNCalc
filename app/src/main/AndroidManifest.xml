@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="frent.nobos.rpncalc">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -27,6 +25,11 @@
 
 <meta-data
     android:name="com.google.android.gms.ads.ca-app-pub-7542723422099323~8177410674"
-    android:value="ca-app-pub-3940256099942544~3347511713" />
+    android:value="ca-app-pub-3940256099942544~3347511713"
+    />
+<meta-data
+    android:name="com.google.android.gms.ads.ca-app-pub-7542723422099323~8177410674"
+    android:value="ca-app-pub-7542723422099323/4504633160"
+    />
 </application>
     </manifest>
